@@ -1,11 +1,11 @@
 name: "rshiny-webpage"
-navbar:
-  title: "MPLF Web Applications"
-  left:
-    - text: "Home"
-      href: index.html
-    - text: "About"
-      href: about.html
+#navbar:
+#  title: "MPMF Web Applications"
+#  left:
+#    - text: "Home"
+#      href: index.html
+#    - text: "About"
+#      href: about.html
 output:
   html_document:
     theme: flatly
@@ -17,3 +17,13 @@ output:
     include:
       after_body: footer.html
     css: styles.css
+# output:
+#  html_document:
+#    theme: readable
+#    code_folding: hide
+#    toc: true
+#    css: styles.css
+# editor_options:
+#  chunk_output_type: console
+    
+    

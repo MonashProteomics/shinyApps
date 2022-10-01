@@ -11,9 +11,9 @@
 
 
 
-<title>About MPFM</title>
+<title>about.knit</title>
 
-<script src="site_libs/header-attrs-2.15/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
@@ -80,80 +80,6 @@ pre code {
 </style>
 
 
-<style type="text/css">
-.dropdown-submenu {
-  position: relative;
-}
-.dropdown-submenu>.dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-top: -6px;
-  margin-left: -1px;
-  border-radius: 0 6px 6px 6px;
-}
-.dropdown-submenu:hover>.dropdown-menu {
-  display: block;
-}
-.dropdown-submenu>a:after {
-  display: block;
-  content: " ";
-  float: right;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 5px 0 5px 5px;
-  border-left-color: #cccccc;
-  margin-top: 5px;
-  margin-right: -10px;
-}
-.dropdown-submenu:hover>a:after {
-  border-left-color: #adb5bd;
-}
-.dropdown-submenu.pull-left {
-  float: none;
-}
-.dropdown-submenu.pull-left>.dropdown-menu {
-  left: -100%;
-  margin-left: 10px;
-  border-radius: 6px 0 6px 6px;
-}
-</style>
-
-<script type="text/javascript">
-// manage active state of menu based on current page
-$(document).ready(function () {
-  // active menu anchor
-  href = window.location.pathname
-  href = href.substr(href.lastIndexOf('/') + 1)
-  if (href === "")
-    href = "index.html";
-  var menuAnchor = $('a[href="' + href + '"]');
-
-  // mark the anchor link active (and if it's in a dropdown, also mark that active)
-  var dropdown = menuAnchor.closest('li.dropdown');
-  if (window.bootstrap) { // Bootstrap 4+
-    menuAnchor.addClass('active');
-    dropdown.find('> .dropdown-toggle').addClass('active');
-  } else { // Bootstrap 3
-    menuAnchor.parent().addClass('active');
-    dropdown.addClass('active');
-  }
-
-  // Navbar adjustments
-  var navHeight = $(".navbar").first().height() + 15;
-  var style = document.createElement('style');
-  var pt = "padding-top: " + navHeight + "px; ";
-  var mt = "margin-top: -" + navHeight + "px; ";
-  var css = "";
-  // offset scroll position for anchor links (for fixed navbar)
-  for (var i = 1; i <= 6; i++) {
-    css += ".section h" + i + "{ " + pt + mt + "}\n";
-  }
-  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
-  document.head.appendChild(style);
-});
-</script>
 
 <!-- tabsets -->
 
@@ -226,73 +152,86 @@ $(document).ready(function () {
 
 
 
-<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html">MPLF Web Applications</a>
-    </div>
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-        <li>
-  <a href="index.html">Home</a>
-</li>
-<li>
-  <a href="about.html">About</a>
-</li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        
-      </ul>
-    </div><!--/.nav-collapse -->
-  </div><!--/.container -->
-</div><!--/.navbar -->
-
 <div id="header">
 
 
 
-<h1 class="title toc-ignore"><span style="color:grey">About
-MPFM</span></h1>
 
 </div>
 
 
-<p><br />
+<nav>
+<ul>
+<li>
+<a class="active" href="index.html">Home</a>
+</li>
+<li>
+<a href="about.html">About</a>
+</li>
+</ul>
+</nav>
+<div class="header">
+<h1>
+Monash Proteomics and Metabolomics Facility
+</h1>
+<p>
 </p>
-<p>Equipped with the latest mass spectrometric instrumentation, the
+</div>
+<div class="body-text">
+</p>
+<p>
+Equipped with the latest mass spectrometric instrumentation, the
 <strong>Monash Proteomics &amp; Metabolomics Facility (MPMF)</strong>
 combines cutting-edge technology with state-of-the-art methodology to
 provide the best possible results and expertise to customers and
-collaborators.</p>
-<p>Mass spectrometry is one of the leading technologies to
-comprehensively identify and globally quantify proteins and other
-biomolecules in virtually every biological sample and environment.</p>
-<p>Due to its unparalleled sensitivity and accuracy, mass spectrometry
-is the method of choice for a plethora of applications ranging from
+collaborators.
+</p>
+<p>
+Mass spectrometry is one of the leading technologies to comprehensively
+identify and globally quantify proteins and other biomolecules in
+virtually every biological sample and environment.
+</p>
+<p>
+Due to its unparalleled sensitivity and accuracy, mass spectrometry is
+the method of choice for a plethora of applications ranging from
 biomarker discoveries to absolute quantifications of low abundant
-peptide species.</p>
+peptide species.
+</p>
 <blockquote>
-<p><a href="https://www.monash.edu/researchinfrastructure/mpmf">More on
-MPFM</a></p>
+<p>
+<a href="https://www.monash.edu/researchinfrastructure/mpmf">More on
+MPMF</a>
+</p>
 </blockquote>
+</div>
+<!--
+---
+title: <span style="color:grey">About MPMF</span>
+output: html_document
+---
+
+\
+
+Equipped with the latest mass spectrometric instrumentation, the **Monash Proteomics & Metabolomics Facility (MPMF)** combines cutting-edge technology with state-of-the-art methodology to provide the best possible results and expertise to customers and collaborators.
+
+Mass spectrometry is one of the leading technologies to comprehensively identify and globally quantify proteins and other biomolecules in virtually every biological sample and environment.
+
+Due to its unparalleled sensitivity and accuracy, mass spectrometry is the method of choice for a plethora of applications ranging from biomarker discoveries to absolute quantifications of low abundant peptide species.
+
+> [More on MPMF](https://www.monash.edu/researchinfrastructure/mpmf)
+-->
 
 &nbsp;
 
 <hr />
 <p style="text-align: center;">A work by:</p>
-<p style="text-align: center;">Monash Proteomics and Metabolomics Facility & Monash Bioinformatics Platform, Monash University</p>
+<p style="text-align: center;"> <a href="https://www.monash.edu/researchinfrastructure/mpmf/" </a> Monash Proteomics and Metabolomics Facility </p>
+<p style="text-align: center;"> <a href="https://www.monash.edu/researchinfrastructure/bioinformatics" </a> Monash Bioinformatics Platform </p>
 <!-- Add icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- Add font awesome icons -->
 <p style="text-align: center;">
     <a href="https://github.com/MonashProteomics/" class="fa fa-github"></a>
-    <a href="https://www.monash.edu/researchinfrastructure/mpmf/" class="fa fa-link"></a>
-    <a href="https://www.monash.edu/researchinfrastructure/bioinformatics" class="fa fa-link"></a>
     <a href="https://www.monash.edu/" class="fa fa-university"></a>
 </p>
 

@@ -1,6 +1,177 @@
-.everything_except_footer
-{margin-bottom=-50px;}
-.footer,
-.extra_element{
-height=50px;
+/* nav bar styles */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.header-background {
+  background-color: red;
+}
+.body-background {
+  background-color: blue;
+}
+
+/*header styles */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+  color: gray;
+  font-size: 50px;
+  font-style: bold;
+}
+.subheader{
+  padding: 0px;
+  margin-top: 0px;
+  margin-left: 0px;
+  text-align: center;
+  background: white;
+  color: gray;
+  font-size: 25px;
+  font-style: italic;
+}
+
+.body-text{
+  margin: 0px;
+  padding: 0px;
+  text-align: left;
+  background: white;
+  color: gray;
+  font-size: 15px;
+}
+
+/* Changing the Color of Hyperlinked Text 
+a {
+  color: #f21c43; 
+}
+*/
+
+/* To format text regarding feedback on github*/
+/* Add space between sections */
+/*
+.section-break {
+  margin:100px;
+}
+*/
+
+/* Adding and Styling a Header Title */
+/*  Section 3  */
+.section-heading {
+  text-align:center;
+  color:grey;
+  margin-top: 50px;
+  margin-bottom:50px;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+
+/* Adding and Styling Tiled Project Boxes */
+/* Sizing for Project Containers  */
+.column-3 {
+  float: left;
+  width: 250px;
+  height: 100px;
+  padding: 0px;
+  margin-right: 25px;
+  margin-left: 25px;
+  margin-bottom: 0px;
+}
+
+/*To create a class for each web app box */
+/* Color [and images] for webapp containers  */
+.webapp-1 {
+  background-color:#FEDE00;
+}
+.webapp-2 {
+  background-color:#06d35f;
+}
+.webapp-3 {
+  background-color:#0ac4e9;
+}
+/* add a ruleset that changes the font size and positioning of the text */
+.project-text {
+  text-align:center;
+  font-size:30px;
+}
+/* Changing Content Color With User Interaction */
+/* Hover classes for individual webapp boxes */
+.webapp-1:hover {
+  background-color:#e44e5d;
+}
+.webapp-2:hover {
+  background-color:#e44e5d;
+}
+.webapp-3:hover {
+  background-color:#e44e5d;
+}
+
+.sub-3a{
+  float: inherit;
+  margin-top: 20px;
+  width:250px;
+  height:200px; 
+  background-color:#e3dfe0;
+  text-align:left;
+  color:black;
+  margin-bottom:30px;
+  margin-left:0px;
+  font-size: 15px;
+  font-weight: normal;
+  padding:0 10px;
+  text-align: center;
+}
+.sub-3bc{
+  float: inherit;
+  margin-top: 50px;
+  width:250px;
+  height:200px; 
+  background-color:#e3dfe0;
+  text-align:left;
+  color:black;
+  margin-bottom:30px;
+  margin-left:0px;
+  font-size: 15px;
+  font-weight: normal;
+  padding:0 10px;
+  text-align: center;
+}
+
+.feedback{
+  margin-top: 500px;
+  text-align:left;
+  color:grey;
+}
+
+/* flip box ------------------------------------------------------------------*/
+
+/* Enf flip box --------------------------------------------------------------*/
+
+
+/* Hover on*/
+.showme {
+  display: none;
+}
+
+.showhim:hover .showme {
+  display: block;
 }

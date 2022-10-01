@@ -11,9 +11,9 @@
 
 
 
-<title>Web-Applications for MS Proteomics</title>
+<title>index.knit</title>
 
-<script src="site_libs/header-attrs-2.15/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
@@ -80,80 +80,6 @@ pre code {
 </style>
 
 
-<style type="text/css">
-.dropdown-submenu {
-  position: relative;
-}
-.dropdown-submenu>.dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-top: -6px;
-  margin-left: -1px;
-  border-radius: 0 6px 6px 6px;
-}
-.dropdown-submenu:hover>.dropdown-menu {
-  display: block;
-}
-.dropdown-submenu>a:after {
-  display: block;
-  content: " ";
-  float: right;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 5px 0 5px 5px;
-  border-left-color: #cccccc;
-  margin-top: 5px;
-  margin-right: -10px;
-}
-.dropdown-submenu:hover>a:after {
-  border-left-color: #adb5bd;
-}
-.dropdown-submenu.pull-left {
-  float: none;
-}
-.dropdown-submenu.pull-left>.dropdown-menu {
-  left: -100%;
-  margin-left: 10px;
-  border-radius: 6px 0 6px 6px;
-}
-</style>
-
-<script type="text/javascript">
-// manage active state of menu based on current page
-$(document).ready(function () {
-  // active menu anchor
-  href = window.location.pathname
-  href = href.substr(href.lastIndexOf('/') + 1)
-  if (href === "")
-    href = "index.html";
-  var menuAnchor = $('a[href="' + href + '"]');
-
-  // mark the anchor link active (and if it's in a dropdown, also mark that active)
-  var dropdown = menuAnchor.closest('li.dropdown');
-  if (window.bootstrap) { // Bootstrap 4+
-    menuAnchor.addClass('active');
-    dropdown.find('> .dropdown-toggle').addClass('active');
-  } else { // Bootstrap 3
-    menuAnchor.parent().addClass('active');
-    dropdown.addClass('active');
-  }
-
-  // Navbar adjustments
-  var navHeight = $(".navbar").first().height() + 15;
-  var style = document.createElement('style');
-  var pt = "padding-top: " + navHeight + "px; ";
-  var mt = "margin-top: -" + navHeight + "px; ";
-  var css = "";
-  // offset scroll position for anchor links (for fixed navbar)
-  for (var i = 1; i <= 6; i++) {
-    css += ".section h" + i + "{ " + pt + mt + "}\n";
-  }
-  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
-  document.head.appendChild(style);
-});
-</script>
 
 <!-- tabsets -->
 
@@ -226,97 +152,127 @@ $(document).ready(function () {
 
 
 
-<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html">MPLF Web Applications</a>
-    </div>
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-        <li>
-  <a href="index.html">Home</a>
-</li>
-<li>
-  <a href="about.html">About</a>
-</li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        
-      </ul>
-    </div><!--/.nav-collapse -->
-  </div><!--/.container -->
-</div><!--/.navbar -->
-
 <div id="header">
 
 
 
-<h1 class="title toc-ignore"><span style="color:grey">Web-Applications
-for MS Proteomics</span></h1>
-<h3 class="subtitle"><span style="color:grey">This platform directs you
-to the right tools required for analysing and visualising mass
-spectrometry (MS)-based pre-processed proteomics data.</span></h3>
 
 </div>
 
 
-<p><br />
-<br />
+<!--
+---
+title: <span style="color:grey">Web-Applications for MS Proteomics</span>
+subtitle: <span style="color:grey">This platform directs you to the right tools required for analysing and visualising mass spectrometry (MS)-based pre-processed proteomics data.</span>
+output: html_document
+---
+-->
+<nav>
+<ul>
+<li>
+<a class="active" href="index.html">Home</a>
+</li>
+<li>
+<a href="about.html">About</a>
+</li>
+</ul>
+</nav>
+<div class="header">
+<p>
+Proteomic Analyst Suites
 </p>
-<p><span style="color: grey;">Currently two web-apps have been developed
-including, LFQ-Analyst and Phospho-Analyst. More yet to be
-introduced.</span><br />
-<br />
+<p>
 </p>
-<div id="lfq-analyst" class="section level3">
-<h3><a
-href="http://118.138.235.40:3838/LFQ-Analyst_Fragpipe/"><strong>1.
-LFQ-Analyst</strong></a></h3>
-<p>LFQ-Analyst has been developed to automate downstream statistical
-analysis and visualistion of <em>label-free</em>, quantitative
-proteomics data preprocessed with <strong>MaxQuant</strong>.</p>
-<p>To start your analysis with LFQ-Analyst, <a
-href="http://118.138.235.40:3838/LFQ-Analyst_Fragpipe/">click
-here</a>.</p>
-<p>For more information about the application, please read our
-documentation published at <a
+</div>
+<div>
+<p class="subheader">
+A Compilation of Easy-To-Use Web Applications for<br />
+Proteomic Data Analysis and Visualisation<br />
+<br />
+<a href="https://www.monash.edu/researchinfrastructure/mpmf">Powered by
+MPMF</a>
+</p>
+</div>
+<!-- Start HTML PART -------------------------------------------------------------------------------------------------------------- -->
+<!--Section 3: Web Apps-->
+<!--
+<h2 class="section-heading">Applications</h2>
+-->
+<!---->
+<p><br><br><br><br><br></p>
+<div class="column-3 webapp-1">
+<div class="showhim">
+<h2 class="project-text">
+<!-- <a href="http://118.138.235.40:3838/LFQ-Analyst_Fragpipe/" style="color:#0f293c">LFQ-Analyst<h4>(MaxQuant)</h4></a> -->
+<a href="apps/lfq-analyst" style="color:#0f293c">LFQ-Analyst
+<h4>
+(MaxQuant)
+</h4>
+</a>
+</h2>
+<div class="showme">
+<h5 class="sub-3a">
+<br></br> Fully automated downstream statistical analysis and
+visualisation tool for <em>label-free</em> quantitative proteomic data
+pre-processed with <strong>MaxQuant</strong>. <br><br> For more
+information, please see our publication at <a
 href="https://pubs.acs.org/doi/10.1021/acs.jproteome.9b00496">ACS
-Publications</a>.<br />
-<br />
+Publications</a>. </br></br>
+</h5>
+</div>
+</div>
+</div>
+<div class="column-3 webapp-2">
+<div class="showhim">
+<h2 class="project-text">
+<!-- <a href="http://118.138.235.40:3838/PhosphoAnalyst/" style="color:#0f293c" >Phospho-Analyst</a> -->
+<a href="apps/phospho-analyst" style="color:#0f293c" >Phospho-Analyst</a>
+</h2>
+<div class="showme">
+<h5 class="sub-3bc">
+<br></br> Fully automated downstream statistical analysis and
+visualisation tool for <em>phosphoproteomic</em> datasets pre-processed
+with MaxQuant.
+</h5>
+</div>
+</div>
+</div>
+<div class="column-3 webapp-3">
+<div class="showhim">
+<h2 class="project-text">
+<!-- <a href="http://118.138.235.40:3838/LFQ-Analyst_Fragpipe/" style="color:#0f293c" >FragPipe-Analyst</a> -->
+<a href="apps/fragpipe-analyst" style="color:#0f293c" >FragPipe-Analyst</a>
+</h2>
+<div class="showme">
+<h5 class="sub-3bc">
+<br></br> Recommended downstream statistical analysis and visualisation
+tool for proteomic data pre-processed with <em>FragPipe</em> and other
+selected software packages developed in the <a
+href="https://fragpipe.nesvilab.org/">Nesvizhskii Lab</a>.
+</h5>
+</div>
+</div>
+</div>
+<!-- Feedback -->
+<div class="feedback">
+<p>
+For any feedback or issues regarding the apps, please reach out on our
+<a href="https://github.com/MonashProteomics/" >GitHub</a>.
 </p>
 </div>
-<div id="phospho-analyst" class="section level3">
-<h3><a href="https://phosphoanalyst.erc.monash.edu/"><strong>2.
-Phospho-Analyst</strong></a></h3>
-<p>A tool for analysing label-free quantitative proteomics data on
-<em>both</em> peptide and protein.</p>
-<p>To start your analysis with Phospho-Analyst, <a
-href="https://phosphoanalyst.erc.monash.edu/">click here</a>.<br />
-<br />
-</p>
-<p><span style="color: grey;">For any feedback or issues regarding the
-apps, please reach out on <a
-href="https://github.com/MonashProteomics/">GitHub</a>.</span><br />
-</p>
-</div>
+<!-- END HTML PART -------------------------------------------------------------------------------------------------------------- -->
 
 &nbsp;
 
 <hr />
 <p style="text-align: center;">A work by:</p>
-<p style="text-align: center;">Monash Proteomics and Metabolomics Facility & Monash Bioinformatics Platform, Monash University</p>
+<p style="text-align: center;"> <a href="https://www.monash.edu/researchinfrastructure/mpmf/" </a> Monash Proteomics and Metabolomics Facility </p>
+<p style="text-align: center;"> <a href="https://www.monash.edu/researchinfrastructure/bioinformatics" </a> Monash Bioinformatics Platform </p>
 <!-- Add icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- Add font awesome icons -->
 <p style="text-align: center;">
     <a href="https://github.com/MonashProteomics/" class="fa fa-github"></a>
-    <a href="https://www.monash.edu/researchinfrastructure/mpmf/" class="fa fa-link"></a>
-    <a href="https://www.monash.edu/researchinfrastructure/bioinformatics" class="fa fa-link"></a>
     <a href="https://www.monash.edu/" class="fa fa-university"></a>
 </p>
 
