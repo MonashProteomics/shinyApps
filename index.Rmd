@@ -5,6 +5,11 @@ subtitle: <span style="color:grey">This platform directs you to the right tools 
 output: html_document
 ---
 -->
+
+
+<!-- Start HTML part -------------------------------------------------------------------------------------------------------------------------- -->
+<!-- Start Header and About part -------------------------------------------------------------------------------------------------------------- -->
+
 <nav>
 <ul>
   <li><a class="active" href="index.html">Home</a></li>
@@ -19,70 +24,99 @@ output: html_document
 
 <div>
 <p class="subheader">A Compilation of Easy-To-Use Web Applications for
-\
+<br>
 Proteomic Data Analysis and Visualisation
-\
-\
-<a href="https://www.monash.edu/researchinfrastructure/mpmf">Powered by MPMF</a>
+<br><br>
+<p style="text-align: center;">
+Powered by <a href="https://www.monash.edu/researchinfrastructure/mpmf">MPMF </a>and <a href="https://www.monash.edu/researchinfrastructure/bioinformatics">MBP</a>
 </p>
+</p>
+<br><br><br><br><br>
 </div>
 
-<!-- Start HTML PART -------------------------------------------------------------------------------------------------------------- -->
-<!--Section 3: Web Apps-->
-<!--
-<h2 class="section-heading">Applications</h2>
--->
-<!---->
-
-<br><br><br><br><br>
 
 
+<!-- Start Body part ------------------------------------------------------------------------------------------------------------------------ -->
+<!-- 1. LFQ-Analyst -->
 <div class="column-3 webapp-1">
   <div class="showhim">
   <h2 class="project-text">
   <!-- <a href="http://118.138.235.40:3838/LFQ-Analyst_Fragpipe/" style="color:#0f293c">LFQ-Analyst<h4>(MaxQuant)</h4></a> -->
-  <a href="apps/lfq-analyst" style="color:#0f293c">LFQ-Analyst<h4>(MaxQuant)</h4></a>
+  <a href="apps/lfq-analyst" style="color:#0f293c"><img src="images/lfq-analyst.png" alt="HTML5 Icon" style="width:300px;height:150px;"></a>
   </h2>
   <div class="showme">
-  <h5 class="sub-3a"> <br></br>  Fully automated downstream statistical analysis and visualisation tool for *label-free* quantitative proteomic data pre-processed with **MaxQuant**.
+  <div w3-container>
+  <div class="sub-unit w3-animate-zoom"> <br></br>  Fully automated downstream statistical analysis and visualisation tool for *label-free* quantitative proteomic data pre-processed with **MaxQuant**.
   <br><br> 
-  For more information, please see our publication at [ACS Publications](https://pubs.acs.org/doi/10.1021/acs.jproteome.9b00496).
-  </br></br>
-  </h5>
+  For more information, please see our publication at [ACS Publications](https://pubs.acs.org/doi/10.1021/acs.jproteome.9b00496).</br></br>
+  </div>
+  </div>
   </div>
   </div>
 </div>
 
 
+<!-- 2. FragPipe-Analyst -->
 <div class="column-3 webapp-2">
   <div class="showhim">
   <h2 class="project-text">
   <!-- <a href="http://118.138.235.40:3838/PhosphoAnalyst/" style="color:#0f293c" >Phospho-Analyst</a> -->
-  <a href="apps/phospho-analyst" style="color:#0f293c" >Phospho-Analyst</a>
+  <a href="apps/phospho-analyst" style="color:#0f293c" ><img src="images/phospho-analyst.png" alt="HTML5 Icon" style="width:300px;height:150px;"></a>
   </h2>
   <div class="showme">
-  <h5 class="sub-3bc"> <br></br> Fully automated downstream statistical analysis and visualisation tool for *phosphoproteomic* datasets pre-processed with MaxQuant. </h5>
+  <div class="sub-unit w3-animate-zoom w3-container"> <br></br> Fully automated downstream statistical analysis and visualisation tool for *phosphoproteomic* datasets pre-processed with MaxQuant. </br></br>
+  </div>
   </div>
   </div>
 </div>
 
 
+<!-- 3. FragPipe-Analyst -->
 <div class="column-3 webapp-3">
   <div class="showhim">
   <h2 class="project-text">
   <!-- <a href="http://118.138.235.40:3838/LFQ-Analyst_Fragpipe/" style="color:#0f293c" >FragPipe-Analyst</a> -->
-  <a href="apps/fragpipe-analyst" style="color:#0f293c" >FragPipe-Analyst</a>
+  <a href="apps/fragpipe-analyst" style="color:#0f293c" ><img src="images/fragpipe-analyst.png" alt="HTML5 Icon" style="width:300px;height:150px;"></a>
   </h2>
   <div class="showme">
-  <h5 class="sub-3bc"> <br></br> Recommended downstream statistical analysis and visualisation tool for proteomic data pre-processed with *FragPipe* and other selected software packages developed in the [Nesvizhskii Lab](https://fragpipe.nesvilab.org/). </h5>
+  <div class="sub-unit w3-animate-zoom w3-container"> <br></br> Recommended downstream statistical analysis and visualisation tool for proteomic data pre-processed with *FragPipe* and other selected software packages developed in the [Nesvizhskii Lab](https://fragpipe.nesvilab.org/). </br></br>
+  </div>
   </div>
   </div>
 </div>
 
 
+<!-- 4. DIA-Analyst -->
+<div class="column-3 webapp-4">
+  <div class="showhim">
+  <h2 class="project-text">
+  <a href="apps/dia-analyst" style="color:#0f293c" ><img src="images/dia-analyst.png" alt="HTML5 Icon" style="width:300px;height:150px;"></a>
+  </h2>
+  <div class="showme">
+  <div class="sub-unit w3-animate-zoom w3-container"> <br></br> DIA-Analyst is under development and will be released soon. </br></br>
+  </div>
+  </div>
+  </div>
+</div>
+
+
+<!-- 5. TMT-Analyst -->
+<div class="column-3 webapp-5">
+  <div class="showhim">
+  <h2 class="project-text">
+  <a href="apps/tmt-analyst" style="color:#0f293c" ><img src="images/tmt-analyst.png" alt="HTML5 Icon" style="width:300px;height:150px;"></a>
+  </h2>
+  <div class="showme">
+  <div class="sub-unit w3-animate-zoom w3-container"> <br></br> TMT-Analyst is under development and will be released soon. </br></br>
+  </div>
+  </div>
+  </div>
+</div>
+
+
+<!-- Start footer part ------------------------------------------------------------------------------------------------------------------- -->
 <!-- Feedback -->
 <div class="feedback" >
 <p> For any feedback or issues regarding the apps, please reach out on our <a href="https://github.com/MonashProteomics/" >GitHub</a>. </p>
 </div>
-
-<!-- END HTML PART -------------------------------------------------------------------------------------------------------------- -->
+<!-- End HTML part ------------------------------------------------------------------------------------------------------------------------ -->
