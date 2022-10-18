@@ -16,6 +16,7 @@ output:
       collapsed: false
     include:
       after_body: footer.html
+      in_header: gtag.html
     css: styles.css
 # output:
 #  html_document:

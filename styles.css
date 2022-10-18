@@ -87,6 +87,23 @@ a {
 
 /* Adding and Styling Tiled Project Boxes */
 /* Sizing for Project Containers  */
+.column-1{
+  columns: 1;
+  width:30%;
+  margin-left: 333px;
+  margin-bottom: 0px;
+}
+
+.column-2{
+  float: left;
+  width: 250px;
+  height: 100px;
+  padding: 0px;
+  margin-right: 100px;
+  margin-left: 100               px;
+  margin-bottom: 0px;
+}
+
 .column-3 {
   float: left;
   width: 250px;
@@ -100,14 +117,32 @@ a {
 /*To create a class for each web app box */
 /* Color [and images] for webapp containers  */
 .webapp-1 {
-  background-color:#FEDE00;
+  background-color:#ffffff;
+  margin-top: 30px;
+  margin-bottom: 100px;
 }
 .webapp-2 {
-  background-color:#06d35f;
+  background-color:#ffffff;
+  margin-top: 30px;
+  margin-bottom: 100px;
 }
 .webapp-3 {
-  background-color:#0ac4e9;
+  background-color:#ffffff;
+  margin-top: 30px;
+  margin-bottom: 100px;
 }
+.webapp-4 {
+  background-color:#ffffff;
+  margin-top: 30px;
+  margin-bottom: 100px;
+
+}
+.webapp-5 {
+  background-color:#ffffff;
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+
 /* add a ruleset that changes the font size and positioning of the text */
 .project-text {
   text-align:center;
@@ -124,28 +159,20 @@ a {
 .webapp-3:hover {
   background-color:#e44e5d;
 }
-
-.sub-3a{
-  float: inherit;
-  margin-top: 20px;
-  width:250px;
-  height:200px; 
-  background-color:#e3dfe0;
-  text-align:left;
-  color:black;
-  margin-bottom:30px;
-  margin-left:0px;
-  font-size: 15px;
-  font-weight: normal;
-  padding:0 10px;
-  text-align: center;
+.webapp-4:hover {
+  background-color:#e44e5d;
 }
-.sub-3bc{
+.webapp-5:hover {
+  background-color:#e44e5d;
+}
+
+.sub-unit{
   float: inherit;
-  margin-top: 50px;
+  margin-top: 5px;
   width:250px;
-  height:200px; 
+  height:250px; 
   background-color:#e3dfe0;
+  position:relative;
   text-align:left;
   color:black;
   margin-bottom:30px;
@@ -157,7 +184,7 @@ a {
 }
 
 .feedback{
-  margin-top: 500px;
+  margin-top: 700px;
   text-align:left;
   color:grey;
 }
@@ -175,3 +202,19 @@ a {
 .showhim:hover .showme {
   display: block;
 }
+
+
+/* pop-up box START --------------------------------------------------------------
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<div class="sub-unit w3-animate-left">
+<div class="w3-container">
+*/
+
+.w3-animate-left{position:relative;animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+.w3-animate-right{position:relative;animation:animateright 0.4s}@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+.w3-animate-zoom {animation:animatezoom 0.6s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
+.w3-container,.w3-panel{padding:0.01em 16px}.w3-panel{margin-top:16px;margin-bottom:16px}
+
+/* pop-up box END ----------------------------------------------------------------
+*/
